@@ -1,0 +1,14 @@
+[user]
+	name = Carmen Wick
+	email = CarmenWick@gmail.com
+[github]
+	user = cwick
+	token = # github token here #
+[core]
+	excludesfile = ~/.gitignore
+[alias]
+	com = commit
+	stat = status
+	st = status
+	# Pimp my log. From 
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
