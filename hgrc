@@ -1,0 +1,8 @@
+[ui]
+username = Carmen Wick <carmen@instantautomatic.com>
+merge=meld
+
+[extensions]
+fetch=
+transplant=
+kilnauth=~/.hgext/kiln/kilnauth.py
