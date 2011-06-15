@@ -6,3 +6,7 @@ merge=meld
 fetch=
 transplant=
 kilnauth=~/.hgext/kiln/kilnauth.py
+
+
+[web]
+cacerts = /etc/ssl/certs/ca-certificates.crt
