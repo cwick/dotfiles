@@ -10,3 +10,6 @@ kilnauth=~/.hgext/kiln/kilnauth.py
 
 [web]
 cacerts = /etc/ssl/certs/ca-certificates.crt
+
+[alias]
+log = log -v
