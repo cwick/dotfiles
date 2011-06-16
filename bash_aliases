@@ -1,4 +1,11 @@
-alias emacs='emacsclient -a emacs -c'
-alias emacsd='emacsclient -a emacs'
+# Attach to emacs server with new frame
+alias emacs='emacsclient -a emacs -n -c'
+
+# Attach to emacs server using existing frame
+alias emacsd='emacsclient -a emacs -n'
+
+# Create new instance of emacs
+alias emacsp='command emacs'
+
 alias cbs='cd ~/dev/ia/development/berlinr/server/'
 alias cbw='cd ~/dev/ia/development/berlinr/website/'
