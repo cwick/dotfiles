@@ -10,6 +10,5 @@ alias emacsp='command emacs'
 # Print symbolic and octal file mode
 alias mode='stat -c "%A (%a) %n"'
 
-alias cbs='cd ~/dev/ia/development/listnr/server/'
-alias cbw='cd ~/dev/ia/development/listnr/website/'
-
+# Quick way to run django test server
+alias mrs='./manage.py runserver'
