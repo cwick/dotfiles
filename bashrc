@@ -103,3 +103,4 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 export EDITOR='emacsclient -a emacs -c'
+export LESS=-R

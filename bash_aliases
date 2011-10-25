@@ -12,3 +12,6 @@ alias mode='stat -c "%A (%a) %n"'
 
 # Quick way to run django test server
 alias mrs='./manage.py runserver'
+
+# Enable ANSI color for ri
+alias ri="ri -f ansi"
