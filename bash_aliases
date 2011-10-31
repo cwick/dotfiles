@@ -8,7 +8,7 @@ alias emacsd='emacsclient -a emacs -n'
 alias emacsp='command emacs'
 
 # Print symbolic and octal file mode
-alias mode='stat -c "%A (%a) %n"'
+alias mode='stat -c "%A %U %G (%a) %n"'
 
 # Quick way to run django test server
 alias mrs='./manage.py runserver'
