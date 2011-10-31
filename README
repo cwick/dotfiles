@@ -1,0 +1,1 @@
+Run 'puppet apply --modulepath=modules --verbose manifests.provision.pp' to set up a new development environment.
