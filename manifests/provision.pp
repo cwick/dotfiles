@@ -1,16 +1,16 @@
-node basenode {
-  $username = 'cwick'
+$username = 'cwick'
 
+Exec { path => '/usr/bin:/bin:/usr/sbin:/sbin' }
+
+node basenode {
   user { $username:
     managehome => true
   }
 
-  class {'dotfiles':
-    user => $username
-  }
-  
+  include dotfiles
   include packages
   include sudo
+  include ruby
 }
 
 

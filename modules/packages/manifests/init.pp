@@ -3,7 +3,7 @@ class packages {
   package { [vim, emacs]: }
 
   # Web
-  package { [firefox, chromium-browser]: }
+  package { [firefox, chromium-browser, curl]: }
 
   # System
   package { [aptitude, htop]: }

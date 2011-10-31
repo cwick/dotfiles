@@ -1,11 +1,11 @@
-class dotfiles($user) {
+class dotfiles {
   define dotfile {
-    file { "/home/${dotfiles::user}/.${name}":
-      owner    => $dotfiles::user,
-      group    => $dotfiles::user,
+    file { "/home/${::username}/.${name}":
+      owner    => $::username,
+      group    => $::username,
       mode     => 644,
       source   => "puppet:///modules/dotfiles/$name",
-      require  => User[$dotfiles::user]
+      require  => User[$::username]
     }
   }
 
