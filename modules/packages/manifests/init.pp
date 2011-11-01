@@ -8,6 +8,9 @@ class packages {
   # System
   package { [aptitude, htop]: }
 
+  # Databases
+  package { [sqlite3, postgresql, mysql-server, mysql-client]: }
+  
   # Version control
   package { [git, mercurial, meld]: }
 
