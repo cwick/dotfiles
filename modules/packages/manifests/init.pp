@@ -12,7 +12,8 @@ class packages {
   package { [git, mercurial, meld]: }
 
   # Languages
-  package { [openjdk-6-jre, openjdk-6-jdk, icedtea6-plugin]: }
+  package { [openjdk-6-jre, openjdk-6-jdk, icedtea6-plugin,
+             python, ruby, ruby-rvm]: }
 
   # Misc
   package { [gtk2-engines-pixbuf]: }

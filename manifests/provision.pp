@@ -10,7 +10,6 @@ node basenode {
   include dotfiles
   include packages
   include sudo
-  include ruby
 }
 
 
