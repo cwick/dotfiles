@@ -11,6 +11,7 @@ node basenode {
   include packages
   include sudo
   include ruby
+  include gnome-terminal
 }
 
 node 'fezmonkey' inherits basenode {}

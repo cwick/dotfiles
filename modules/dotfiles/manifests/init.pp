@@ -5,7 +5,6 @@ class dotfiles {
       group    => $::username,
       mode     => 644,
       source   => "puppet:///modules/dotfiles/$name",
-      require  => User[$::username]
     }
   }
 
