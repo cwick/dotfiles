@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="maximize_vertically" mtime="1320221254" type="string">
+		<stringvalue>&lt;Mod4&gt;Up</stringvalue>
+	</entry>
+</gconf>
