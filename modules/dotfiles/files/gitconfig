@@ -14,5 +14,5 @@
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     # Add unstaged changes and commit
     coma = commit -a
-    out = log FETCH_HEAD..master
-    in = log master..FETCH_HEAD
+    out  = !"git fetch && git log FETCH_HEAD..master"
+    in   = !"git fetch && git log master..FETCH_HEAD"
