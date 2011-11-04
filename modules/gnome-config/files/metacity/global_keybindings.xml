@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="run_command_terminal" mtime="1320371927" type="string">
+		<stringvalue>&lt;Control&gt;&lt;Alt&gt;T</stringvalue>
+	</entry>
+	<entry name="show_desktop" mtime="1320381612" type="string">
+		<stringvalue>&lt;Mod4&gt;d</stringvalue>
+	</entry>
+</gconf>

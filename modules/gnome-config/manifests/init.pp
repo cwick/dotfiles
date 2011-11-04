@@ -20,7 +20,11 @@ class gnome-config {
     app    => "gnome-terminal",
   }
   config_file { "window_keybindings":
-    source => "keybindings.xml",
+    source => "window_keybindings.xml",
+    app    => "metacity",
+  }
+  config_file { "global_keybindings":
+    source => "global_keybindings.xml",
     app    => "metacity",
   }
 }
