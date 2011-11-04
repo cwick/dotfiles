@@ -6,7 +6,7 @@ class packages {
   package { [firefox, chromium-browser, curl]: }
 
   # System
-  package { [aptitude, htop, gparted]: }
+  package { [aptitude, htop, gparted, compizconfig-settings-manager]: }
 
   # Databases
   package { [sqlite3, postgresql, mysql-server, mysql-client]: }
