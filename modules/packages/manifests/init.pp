@@ -17,7 +17,7 @@ class packages {
   # Languages
   package { [openjdk-6-jre, openjdk-6-jdk, icedtea6-plugin,
              python,
-             ruby, ruby-rvm, rdoc,
+             ruby,
              gcc]: }
 
   # Libraries

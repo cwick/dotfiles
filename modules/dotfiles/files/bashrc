@@ -106,4 +106,5 @@ export EDITOR='emacsclient -a emacs -c'
 export LESS=-R
 
 # Enable RVM
-. /etc/profile.d/rvm.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
