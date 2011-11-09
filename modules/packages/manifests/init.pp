@@ -3,7 +3,7 @@ class packages {
   package { [vim, emacs]: }
 
   # Web
-  package { [firefox, chromium-browser, curl]: }
+  package { [firefox, chromium-browser]: }
 
   # System
   package { [aptitude, htop, gparted, compizconfig-settings-manager]: }
@@ -20,9 +20,6 @@ class packages {
              ruby,
              gcc]: }
 
-  # Libraries
-  package { [libssl-dev]: }
-  
   # Misc
   package { [gtk2-engines-pixbuf]: }
 }
