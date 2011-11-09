@@ -14,4 +14,7 @@ node basenode {
   include gnome-config
 }
 
+# Desktop machine
 node 'fezmonkey' inherits basenode {}
+# Laptop
+node 'monkeyballs' inherits basenode {}
