@@ -1,6 +1,6 @@
 class packages {
   # Editors
-  package { [vim, emacs]: }
+  package { [vim, emacs, emacs-goodies-el, emacs23-el]: }
 
   # Web
   package { [firefox, chromium-browser]: }
