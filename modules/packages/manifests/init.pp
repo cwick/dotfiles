@@ -9,7 +9,7 @@ class packages {
   package { [aptitude, htop, gparted, compizconfig-settings-manager]: }
 
   # Databases
-  package { [sqlite3, postgresql, mysql-server, mysql-client]: }
+  package { [sqlite3, postgresql, mysql-server, mysql-client, libmysqlclient-dev]: }
   
   # Version control
   package { [git, mercurial, meld]: }
@@ -19,6 +19,9 @@ class packages {
              python,
              ruby,
              gcc]: }
+
+  # Javascript
+  package { [nodejs]: }
 
   # Misc
   package { [gtk2-engines-pixbuf]: }
