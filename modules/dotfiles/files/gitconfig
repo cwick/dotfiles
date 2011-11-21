@@ -16,3 +16,4 @@
     coma = commit -a
     out  = !"git fetch && git log FETCH_HEAD..master"
     in   = !"git fetch && git log master..FETCH_HEAD"
+    logf = log --name-status
