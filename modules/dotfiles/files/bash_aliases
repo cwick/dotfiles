@@ -15,3 +15,11 @@ alias mrs='./manage.py runserver'
 
 # Enable ANSI color for ri
 alias ri="ri -f ansi"
+
+# Rails shortcuts
+alias rt="rake test"
+alias rtf="rake test:functionals"
+alias rtu="rake test:units"
+alias rti="rake test:integration"
+alias rtb="rake test:benchmark"
+
