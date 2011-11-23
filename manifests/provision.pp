@@ -7,6 +7,19 @@ node basenode {
     managehome => true
   }
 
+  ############################################################################
+  # Configure postgresql
+  ############################################################################
+  postgres::database { $username:
+      ensure  => present,
+      require => Package["postgresql"],
+  }
+  postgres::role { $username:
+      ensure    => present,
+      superuser => true,
+      require   => Package["postgresql"],
+  }
+
   include dotfiles
   include packages
   include sudo
