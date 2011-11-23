@@ -1,7 +1,7 @@
 class ruby {
     $rvmdir = "/home/${::username}/.rvm"
     $rvm = ". ${rvmdir}/scripts/rvm; rvm"
-    $version = "1.9.2-p290"
+    $version = "1.9.3-p0"
 
     Exec {
       user    => $::username,
