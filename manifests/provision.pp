@@ -25,6 +25,7 @@ node basenode {
   include sudo
   include ruby
   include gnome-config
+  include inigral
 }
 
 # Desktop machine

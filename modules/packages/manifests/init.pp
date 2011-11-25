@@ -9,10 +9,11 @@ class packages {
   package { [aptitude, htop, gparted, compizconfig-settings-manager]: }
 
   # Databases
-  package { [sqlite3, postgresql, mysql-server, mysql-client, libmysqlclient-dev]: }
+  package { [sqlite3, postgresql, "postgresql-server-dev-9.1",
+             mysql-server, mysql-client, libmysqlclient-dev]: }
   
   # Version control
-  package { [git, mercurial, meld]: }
+  package { [git, mercurial]: }
 
   # Languages
   package { [openjdk-6-jre, openjdk-6-jdk, icedtea6-plugin,
@@ -23,6 +24,10 @@ class packages {
   # Javascript
   package { [nodejs]: }
 
+
+  # Utilities
+  package { [tree, meld, libnss3-tools]: }
+  
   # Misc
   package { [gtk2-engines-pixbuf]: }
 }
