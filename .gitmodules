@@ -1,0 +1,3 @@
+[submodule "modules/inigral"]
+	path = modules/inigral
+	url = git@github.com:cwick/puppet-inigral.git

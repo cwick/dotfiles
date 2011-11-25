@@ -1,1 +1,3 @@
 Run './apply.sh' to set up a new development environment.
+
+Remember to clone this repository with --recursive (only works if you have access to my private repositories)
