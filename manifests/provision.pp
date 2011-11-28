@@ -10,6 +10,7 @@ node basenode {
   ############################################################################
   # Configure postgresql
   ############################################################################
+  include postgres
   postgres::database { $username:
       ensure  => present,
       require => Package["postgresql"],
