@@ -18,7 +18,10 @@ node basenode {
   postgres::role { $username:
       ensure    => present,
       superuser => true,
-      require   => Package["postgresql"],
+  }
+  postgres::role { "root":
+      ensure    => present,
+      superuser => true,
   }
 
   include dotfiles
