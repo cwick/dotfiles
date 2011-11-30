@@ -24,7 +24,9 @@ class ruby {
       require => Exec["rvm-install"],
     }
 
-    exec { "bash -c \"${rvm} install ${version} --with-openssl-dir=${rvmdir}/usr\"":
+    # This exec rule used to use the option "--with-openssl-dir=${rvmdir}/usr"
+    # But this caused a crash in the ruby interpreter when invoking PGconn.connect
+    exec { "bash -c \"${rvm} install ${version}\"":
       creates => "${rvmdir}/rubies/ruby-${version}/",
       require => Exec["rvm-openssl"],
     }
