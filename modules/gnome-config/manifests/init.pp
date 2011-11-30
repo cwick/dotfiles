@@ -1,14 +1,35 @@
 class gnome-config {
-  define config_file($source, $app) {
-    file { "/home/${::username}/.gconf/apps/${app}/${name}/":
+  define app_prerequisites {
+    file { "/home/${::username}/.gconf/apps/${name}/":
       ensure => directory,
-    }
-    file { "/home/${::username}/.gconf/apps/${app}/${name}/%gconf.xml":
-      source => "puppet:///modules/gnome-config/${app}/${source}",
-      mode   => 600,
       owner  => $::username,
       group  => $::username,
     }
+  }
+
+  define config_file($source, $app) {
+    if !defined(App_Prerequisites[$app]) {
+      app_prerequisites { $app: }
+    }
+    
+    file { "/home/${::username}/.gconf/apps/${app}/${name}/":
+      ensure => directory,
+      owner  => $::username,
+      group  => $::username,
+    }
+    file { "/home/${::username}/.gconf/apps/${app}/${name}/%gconf.xml":
+      source => "puppet:///modules/gnome-config/${app}/${source}",
+      mode   => 664,
+      owner  => $::username,
+      group  => $::username,
+    }
+  }
+
+  file { ["/home/${::username}/.gconf/",
+          "/home/${::username}/.gconf/apps/"]:
+    ensure => directory,
+    owner  => $::username,
+    group  => $::username,
   }
 
   config_file { "profiles/Default":
