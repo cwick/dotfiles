@@ -102,6 +102,11 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+# activate all shell aliases
+if [ -d ~/.bash_aliases.d ]; then
+    for f in ~/.bash_aliases.d/*; do source $f; done
+fi
+
 export EDITOR='emacsclient -a emacs -c'
 export LESS=-R
 export PAGER=/usr/bin/less
