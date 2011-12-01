@@ -36,3 +36,6 @@ node basenode {
 node 'fezmonkey' inherits basenode {}
 # Laptop
 node 'monkeyballs' inherits basenode {}
+# iMac at work
+node 'bananaphone' inherits basenode {}
+
