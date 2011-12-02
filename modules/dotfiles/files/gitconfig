@@ -10,6 +10,7 @@
     com = commit
     stat = status
     st = status
+    co = checkout
     # Pimp my log. From 
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     # Add unstaged changes and commit
