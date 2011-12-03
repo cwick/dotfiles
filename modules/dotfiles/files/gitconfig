@@ -18,3 +18,6 @@
     out  = !"git fetch && git log FETCH_HEAD..master"
     in   = !"git fetch && git log master..FETCH_HEAD"
     logf = log --name-status
+    # Serve a git repository on the spot
+    # https://git.wiki.kernel.org/articles/a/l/i/Aliases.html#Serve_repo_on_the_spot
+    serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
