@@ -1,6 +1,6 @@
 $username = 'cwick'
 
-Exec { path => '/usr/bin:/bin:/usr/sbin:/sbin' }
+Exec { path => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin' }
 
 node basenode {
   user { $username:
@@ -30,6 +30,7 @@ node basenode {
   include ruby
   include gnome-config
   include inigral
+  include graphite
 }
 
 # Desktop machine
