@@ -3,6 +3,8 @@ class ruby {
     $rvm = ". ${rvmdir}/scripts/rvm; rvm"
     $version = "1.9.3-p0"
 
+    include ruby::rtags
+
     Exec {
       user    => $::username,
       timeout => 0, # Installing Ruby can take a while, so disable timeout
