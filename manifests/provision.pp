@@ -36,6 +36,7 @@ node basenode {
   include gnome-config
   include inigral
   include graphite
+  include hbase
 }
 
 # Desktop machine
