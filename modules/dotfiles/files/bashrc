@@ -111,6 +111,7 @@ export EDITOR='emacsclient -a emacs -c'
 export LESS=-R
 export PAGER=/usr/bin/less
 export GIT_PS1_SHOWDIRTYSTATE=true
+export JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk
 
 # Enable RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

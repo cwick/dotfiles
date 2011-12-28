@@ -7,6 +7,11 @@ node basenode {
     managehome => true
   }
 
+  # Set hostname
+  host { $hostname:
+    ip => $ipaddress,
+  }
+
   ############################################################################
   # Configure postgresql
   ############################################################################
@@ -31,6 +36,7 @@ node basenode {
   include gnome-config
   include inigral
   include graphite
+  include hbase
 }
 
 # Desktop machine
