@@ -1,6 +1,9 @@
 $username = 'cwick'
 
-Exec { path => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin' }
+Exec { 
+  path => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin',
+  logoutput => on_failure,
+}
 
 node basenode {
   user { $username:
