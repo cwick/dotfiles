@@ -34,4 +34,16 @@ class dotfiles {
   bash_alias { "base":
     source => "puppet:///modules/dotfiles/bash_aliases",
   }
+
+  # Install git-meld plugin
+  exec { "wget https://raw.github.com/wmanley/git-meld/master/git-meld.pl -O /usr/local/bin/git-meld.pl":
+    creates => "/usr/local/bin/git-meld.pl",
+    user    => root,
+    alias   => "git-meld-download",
+  }
+
+  file { "/usr/local/bin/git-meld.pl":
+    mode    => 775,
+    require => Exec["git-meld-download"],
+  }
 }
