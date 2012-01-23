@@ -8,7 +8,8 @@ class hbase {
   
   exec { "wget http://www.apache.org/dist/hbase/${hbase_folder}/${hbase_tarball} -O ${srcdir}/${hbase_tarball}":
     creates => "${srcdir}/${hbase_tarball}",
-    alias   => "hbase-download"
+    alias   => "hbase-download",
+    timeout => 0,
   }
   
   exec { "tar xf ${srcdir}/${hbase_tarball} -C ${srcdir}":

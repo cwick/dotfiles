@@ -6,7 +6,8 @@ class packages {
   package { [firefox, chromium-browser]: }
 
   # System
-  package { [aptitude, htop, gparted, compizconfig-settings-manager]: }
+  package { [aptitude, htop, gparted, compizconfig-settings-manager,
+             rpm]: }
 
   # Databases
   package { [sqlite3, postgresql, "postgresql-server-dev-9.1",
