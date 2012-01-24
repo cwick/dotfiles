@@ -11,7 +11,8 @@ class packages {
 
   # Databases
   package { [sqlite3, postgresql, "postgresql-server-dev-9.1",
-             mysql-server, mysql-client, libmysqlclient-dev]: }
+             mysql-server, mysql-client, libmysqlclient-dev,
+             redis-server, memcached]: }
   
   # Version control
   package { [git, mercurial]: }
