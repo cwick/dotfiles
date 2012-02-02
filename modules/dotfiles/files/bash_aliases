@@ -23,3 +23,5 @@ alias rtu="rake test:units"
 alias rti="rake test:integration"
 alias rtb="rake test:benchmark"
 
+# Print a list of listening ports
+alias ports="sudo netstat -pln"
