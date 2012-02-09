@@ -39,6 +39,7 @@ node basenode {
   include gnome-config
   include graphite
   include hbase
+  include git-flow
 }
 
 # Desktop machine
