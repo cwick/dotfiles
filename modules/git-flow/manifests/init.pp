@@ -13,7 +13,7 @@ class git-flow {
   }
 
   # Bash completion script
-  exec { "wget -q -O /etc/profile.d/git-flow-completion.sh https://raw.github.com/bobthecow/git-flow-completion/master/git-flow-completion.bash":
-    creates => '/etc/profile.d/git-flow-completion.sh'
+  exec { "wget -q -O /etc/bash_completion.d/git-flow-completion https://raw.github.com/bobthecow/git-flow-completion/master/git-flow-completion.bash":
+    creates => '/etc/bash_completion.d/git-flow-completion'
   }
 }
