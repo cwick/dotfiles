@@ -30,6 +30,9 @@ class packages {
   # Utilities
   package { [tree, meld, libnss3-tools]: }
 
+  # SDL
+  package { ["libsdl-image1.2", "libsdl1.2-all", "libsdl-ttf2.0"]: }
+
   # Misc
   package { [gtk2-engines-pixbuf]: }
 }

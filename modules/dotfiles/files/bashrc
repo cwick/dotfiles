@@ -114,7 +114,7 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 export JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk
 
 # Replacement rgrep
-rgrep(){ grep -RiI $1 *; }
+rgrep(){ grep -RiI "$1" *; }
 
 # Enable git completion for aliased commands
 _git_meld ()
