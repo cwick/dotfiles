@@ -7,13 +7,13 @@ class packages {
 
   # System
   package { [aptitude, htop, gparted, compizconfig-settings-manager,
-             rpm]: }
+             rpm, smbfs]: }
 
   # Databases
   package { [sqlite3, postgresql, "postgresql-server-dev-9.1",
              mysql-server, mysql-client, libmysqlclient-dev,
              redis-server, memcached]: }
-  
+
   # Version control
   package { [git, mercurial]: }
 
@@ -29,7 +29,7 @@ class packages {
 
   # Utilities
   package { [tree, meld, libnss3-tools]: }
-  
+
   # Misc
   package { [gtk2-engines-pixbuf]: }
 }
