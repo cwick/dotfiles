@@ -21,6 +21,7 @@ class packages {
   package { [openjdk-6-jre, openjdk-6-jdk, icedtea6-plugin,
              python,
              ruby,
+	     ruby-dev,
              gcc]: }
 
   # Javascript
