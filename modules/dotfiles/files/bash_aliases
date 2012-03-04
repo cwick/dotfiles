@@ -28,3 +28,6 @@ alias ports="sudo netstat -pln"
 
 # tmux
 alias tmux="tmux -2"
+
+# cd shortcuts
+alias cdf="cd ~/dev/dotfiles"
