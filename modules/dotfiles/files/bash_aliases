@@ -25,3 +25,6 @@ alias rtb="rake test:benchmark"
 
 # Print a list of listening ports
 alias ports="sudo netstat -pln"
+
+# tmux
+alias tmux="tmux -2"
