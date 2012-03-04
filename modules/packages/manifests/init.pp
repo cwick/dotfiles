@@ -21,7 +21,7 @@ class packages {
   package { [openjdk-6-jre, openjdk-6-jdk, icedtea6-plugin,
              python,
              ruby,
-	     ruby-dev,
+             ruby-dev,
              gcc]: }
 
   # Javascript
@@ -32,7 +32,7 @@ class packages {
   package { [tree, meld, libnss3-tools]: }
 
   # SDL
-  package { ["libsdl-image1.2", "libsdl1.2-all", "libsdl-ttf2.0"]: }
+  package { ["libsdl-image1.2", "libsdl1.2debian-all", "libsdl-ttf2.0-0", "libsdl-ttf2.0-dev"]: }
 
   # Misc
   package { [gtk2-engines-pixbuf]: }

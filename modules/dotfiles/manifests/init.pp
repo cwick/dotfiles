@@ -29,7 +29,7 @@ class dotfiles {
 
   dotfile { [bashrc, bash_profile,
              gitconfig, gitignore, hgrc, irbrc,
-             sqliterc, inputrc]: }
+             sqliterc, inputrc, "tmux.conf"]: }
 
   bash_alias { "base":
     source => "puppet:///modules/dotfiles/bash_aliases",
