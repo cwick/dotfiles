@@ -122,6 +122,9 @@ _git_meld ()
   _git_diff
 }
 
+# User vim-style key bindings
+set -o vi
+
 # Enable RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
