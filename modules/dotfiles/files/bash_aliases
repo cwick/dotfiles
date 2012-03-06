@@ -18,10 +18,10 @@ alias ri="ri -f ansi"
 
 # Rails shortcuts
 alias rt="rake test"
-alias rtf="rake test:functionals"
-alias rtu="rake test:units"
-alias rti="rake test:integration"
 alias rtb="rake test:benchmark"
+alias rtf="rake test:functionals"
+alias rti="rake test:integration"
+alias rtu="rake test:units"
 
 # Print a list of listening ports
 alias ports="sudo netstat -pln"
@@ -35,8 +35,9 @@ alias cv="cd ~/.vim"
 alias c..="cd .."
 
 # git shortcuts
-alias gs="git status"
 alias gcom="git commit"
 alias gcoma="git commit -a"
 alias gdf="git diff"
+alias gpull="git pull"
 alias gpush="git push"
+alias gs="git status"
