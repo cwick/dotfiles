@@ -12,7 +12,15 @@ class packages {
   # Databases
   package { [sqlite3, postgresql, "postgresql-server-dev-9.1",
              mysql-server, mysql-client, libmysqlclient-dev,
-             redis-server, memcached]: }
+             memcached]: }
+
+  exec { "sudo add-apt-repository ppa:chris-lea/redis-server; sudo apt-get update":
+    creates => "/etc/apt/sources.list.d/chris-lea-redis-server-oneiric.list",
+    alias   => "add-redis-repo"
+  }
+  package { redis-server:
+    require => Exec[add-redis-repo]
+  }
 
   # Version control
   package { [git, mercurial]: }
