@@ -1,6 +1,6 @@
 class packages {
   # Editors
-  package { [vim, emacs, emacs-goodies-el, emacs23-el]: }
+  package { [vim, vim-gtk, emacs, emacs-goodies-el, emacs23-el]: }
 
   # Web
   package { [firefox, chromium-browser]: }
@@ -37,7 +37,7 @@ class packages {
 
 
   # Utilities
-  package { [tree, meld, libnss3-tools, ack, ack-grep]: }
+  package { [tree, meld, libnss3-tools, ack, ack-grep, tmux]: }
 
   # SDL
   package { ["libsdl-image1.2", "libsdl1.2debian-all", "libsdl-ttf2.0-0", "libsdl-ttf2.0-dev"]: }
