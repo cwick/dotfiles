@@ -1,10 +1,3 @@
-# [difftool "meld"]
-#    cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
-# [difftool]
-#        prompt = false
-# [diff]
-#        tool = Kaleidoscope
-
 [user]
     name = Carmen Wick
     email = CarmenWick@gmail.com
@@ -20,7 +13,7 @@
     st = status
     br = branch
     co = checkout
-    # Pimp my log. From 
+    # Pimp my log. From
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     # Add unstaged changes and commit
     coma = commit -a
@@ -31,6 +24,9 @@
     # https://git.wiki.kernel.org/articles/a/l/i/Aliases.html#Serve_repo_on_the_spot
     serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
     meld = !git-meld.pl
+    imerge = merge --no-commit --no-ff
+    ignore-tracked = update-index --assume-unchanged
+    unignore-tracked = update-index --no-assume-unchanged
 
 [color]
     ui = auto
@@ -39,7 +35,7 @@
     status = auto
 [color "branch"]
     current = yellow reverse
-    local = yellow 
+    local = yellow
     remote = green
 [color "diff"]
     meta = yellow bold
