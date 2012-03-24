@@ -113,6 +113,13 @@ export PAGER=/usr/bin/less
 export GIT_PS1_SHOWDIRTYSTATE=true
 export JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk
 
+export HISTFILESIZE=10000
+export HISTSIZE=10000
+# Append to history file for each new command
+export PROMPT_COMMAND='history -a'
+# Don't overwrite history when shell exits
+shopt -s histappend
+
 # Replacement rgrep
 rgrep(){ grep -RiI "$1" *; }
 
