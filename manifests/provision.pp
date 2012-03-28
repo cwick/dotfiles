@@ -1,6 +1,6 @@
 $username = 'cwick'
 
-Exec { 
+Exec {
   path => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin',
   logoutput => on_failure,
 }
@@ -61,7 +61,7 @@ node 'monkeyballs' inherits basenode {
 # iMac at work
 node 'bananaphone' inherits basenode {
   class {"inigral":
-    centurion_ip    => "10.0.1.45",
+    centurion_ip    => "10.42.0.100",
     puppetmaster_ip => "10.0.1.58"
   }
 }
