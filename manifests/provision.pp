@@ -61,8 +61,8 @@ node 'monkeyballs' inherits basenode {
 # iMac at work
 node 'bananaphone' inherits basenode {
   class {"inigral":
-    centurion_ip    => "10.42.0.100",
-    puppetmaster_ip => "10.0.1.58"
+    centurion_ip    => "10.42.0.50",
+    puppetmaster_ip => "10.42.0.51"
   }
 }
 
