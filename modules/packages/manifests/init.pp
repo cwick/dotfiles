@@ -40,7 +40,7 @@ class packages {
   package { [tree, meld, libnss3-tools, ack, ack-grep, tmux]: }
 
   # SDL
-  package { ["libsdl-image1.2", "libsdl1.2debian-all", "libsdl-ttf2.0-0", "libsdl-ttf2.0-dev"]: }
+  package { ["libsdl-image1.2", "libsdl1.2debian", "libsdl-ttf2.0-0", "libsdl-ttf2.0-dev"]: }
 
   # Misc
   package { [gtk2-engines-pixbuf]: }
