@@ -12,9 +12,12 @@ HISTCONTROL=ignoredups:ignorespace
 # append to the history file, don't overwrite it
 shopt -s histappend
 
+# Append to history file for each new command
+export PROMPT_COMMAND='history -a'
+
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTFILESIZE=10000
+HISTSIZE=10000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -112,13 +115,6 @@ export LESS=-R
 export PAGER=/usr/bin/less
 export GIT_PS1_SHOWDIRTYSTATE=true
 export JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk
-
-export HISTFILESIZE=10000
-export HISTSIZE=10000
-# Append to history file for each new command
-export PROMPT_COMMAND='history -a'
-# Don't overwrite history when shell exits
-shopt -s histappend
 
 # Replacement rgrep
 rgrep(){ grep -RiI "$1" *; }
