@@ -114,7 +114,7 @@ export EDITOR='vim'
 export LESS=-R
 export PAGER=/usr/bin/less
 export GIT_PS1_SHOWDIRTYSTATE=true
-export JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk-i386
 
 # Replacement rgrep
 rgrep(){ grep -RiI "$1" *; }
