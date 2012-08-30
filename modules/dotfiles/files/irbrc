@@ -7,3 +7,8 @@ Wirble.colorize
 if defined?(ActiveRecord::Base)
   ActiveRecord::Base.logger = Logger.new(STDOUT)
 end
+
+if defined?(SH)
+  SH.cd 'cw'
+end
+
