@@ -15,7 +15,7 @@ HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend
 
 # Append to history file for each new command
-export PROMPT_COMMAND='history -a'
+export PROMPT_COMMAND='history -n; history -a'
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTFILESIZE=10000
