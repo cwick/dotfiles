@@ -5,3 +5,5 @@ css=.sass,.scss
 coffee=.coffee
 --type-set
 puppet=.pp
+--type-set
+ejs=.ejs
