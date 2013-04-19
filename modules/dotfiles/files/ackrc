@@ -1,4 +1,7 @@
 --smart-case
+--ignore-dir=tmp
+--ignore-dir=log
+
 --type-add
 css=.sass,.scss
 --type-set
