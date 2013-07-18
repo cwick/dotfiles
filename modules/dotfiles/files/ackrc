@@ -4,9 +4,18 @@
 
 --type-add
 css=.sass,.scss
+
 --type-set
 coffee=.coffee
+
 --type-set
 puppet=.pp
+
 --type-set
 ejs=.ejs
+
+--type-set
+rabl=.rabl
+
+--type-set
+haml=.hamlc
