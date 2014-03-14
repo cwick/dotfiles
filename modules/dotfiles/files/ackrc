@@ -19,3 +19,6 @@ rabl=.rabl
 
 --type-set
 haml=.hamlc
+
+--type-set     
+emblem=.emblem
