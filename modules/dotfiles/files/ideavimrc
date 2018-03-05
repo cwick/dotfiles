@@ -1,5 +1,5 @@
 set ignorecase
 set smartcase
 set undolevels 999
-set wrapscan
 set number
+set hlsearch

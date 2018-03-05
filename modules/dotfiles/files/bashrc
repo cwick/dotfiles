@@ -134,7 +134,15 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Udemy stuff
-# eval $(docker-machine env)
+eval $(docker-machine env)
 export UDEMY_PHP_PATH=~/dev/udemy-php
 export DJANGO_SETTINGS_MODULE=udemy.settings.local
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+. ~/.virtualenvs/udemy/bin/activate
+
+
+export PATH="$HOME/.yarn/bin:$PATH"
+
+export UDEMY_SSH_HOST=legacy-dev-sf
+export UDEMY_GIT_HOOK_DOCKER=1
